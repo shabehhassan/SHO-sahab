@@ -1,0 +1,570 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: #050E25;
+}
+.light-theme{
+    --primary-color: #050E25;
+    --secondary-color: white;
+}
+
+nav {
+    background: #091637;
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+}
+
+body {
+    background: var(--secondary-color);
+    overflow-y: scroll;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+    color: white;
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    display: none;
+}
+
+.head {
+    margin: 10px 20px;
+}
+
+.search-logo {
+    margin: 22px 9px;
+}
+
+.search {
+    position: absolute;
+    top: 22px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    width: 80px;
+}
+
+.left-nav {
+    display: inline;
+    float: right;
+}
+
+.light {
+    margin: 20px 4px;
+    cursor: pointer;
+    padding: 4px;
+    background: #011B3A;
+    border-radius: 100%;
+    box-shadow: 0 0 9px 0px black;
+}
+
+.dark {
+    margin: 23px 0px;
+    cursor: pointer;
+}
+
+.notification {
+    margin-block: 23px;
+    margin-left: 9px;
+    cursor: pointer;
+
+}
+
+.acc {
+    padding: 5px;
+    background: #257EE0;
+    border-radius: 100%;
+    margin: 15px 6px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px;
+    position: absolute;
+    background: transparent;
+    top: 15px;
+    right: 52px;
+    cursor: pointer;
+}
+
+.exit {
+    margin: 22px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.left {
+    background: #011B3A;
+    width: 270px;
+    height: 100vh;
+    margin-top: 70px;
+    display: inline-flex;
+    position: fixed;
+}
+
+.left ul {
+    padding: 1px;
+}
+
+.left ul li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.left ul li a {
+    font-size: 1rem;
+    padding-left: 45px;
+    text-decoration: none;
+    color: white;
+    border-left: 5px solid transparent;
+}
+
+.left ul li img {
+    margin-left: 24px;
+}
+
+.left ul li .active {
+    border-left: 5px solid green;
+    color: #4FC2D9;
+
+}
+
+.left ul li a:hover {
+    border-left: 5px solid green;
+    color: #4FC2D9;
+}
+
+.left ul li img {
+    margin-right: 10px;
+    margin-left: -30px;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+}
+
+.right {
+    padding: 20px;
+    margin-left: 260px;
+    margin-top: 70px;
+}
+
+.right h1 {
+    color: var(--primary-color);
+    padding: 10px;
+}
+
+.right .progress {
+    border: 1px solid #4FC2D9;
+    display: inline-block;
+    width: 1152px;
+    height: 112px;
+    border-radius: 10px;
+    background: #021D3E;
+    margin-left: 10px;
+}
+
+.right .progress .pdf {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.right label {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-top: -45px;
+}
+
+.right .time {
+    display: flex;
+    margin-top: 5px;
+    color: rgb(168, 163, 163);
+    font-size: 16px;
+}
+
+.main-progressbar {
+    margin-left: 80px;
+    height: 5px;
+    width: 955px;
+    background: black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    background: #257EE0;
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.cross {
+    margin-left: 1060px;
+    margin-top: -50px;
+    display: flex;
+}
+
+.post {
+    color: white;
+    background: #257EE0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 970px;
+    cursor: pointer;
+
+}
+
+@media(max-width:2230px) {
+    .left {
+        width: 270px;
+    }
+}
+
+@media(max-width:1555px) {
+    .left {
+        height: 112vh;
+        width: 270px;
+    }
+}
+
+@media(max-width:1468px) {
+    .right .progress {
+        width: 905px;
+    }
+
+    .main-progressbar {
+        width: 750px;
+    }
+
+    .cross {
+        margin-left: 840px;
+    }
+
+    .post {
+        margin-left: 720px;
+    }
+}
+
+@media(max-width:1224px) {
+    .right .progress {
+        width: 760px;
+    }
+
+    .main-progressbar {
+        width: 600px;
+    }
+
+    .cross {
+        margin-left: 690px;
+    }
+
+    .post {
+        margin-left: 580px;
+    }
+
+}
+
+@media(max-width:1072px) {
+    .right .progress {
+        width: 690px;
+    }
+
+    .main-progressbar {
+        width: 540px;
+    }
+
+    .cross {
+        margin-left: 630px;
+    }
+
+    .post {
+        margin-left: 510px;
+    }
+
+}
+
+
+@media(max-width:1000px) {
+    .right .progress {
+        width: 580px;
+    }
+
+    .main-progressbar {
+        width: 430px;
+    }
+
+    .cross {
+        margin-left: 520px;
+    }
+
+    .post {
+        margin-left: 390px;
+    }
+}
+
+@media(max-width:888px) {
+
+    .left {
+        width: 60px;
+        height: 97vh;
+    }
+
+    .right .progress {
+        width: 500px;
+    }
+
+    .main-progressbar {
+        width: 330px;
+    }
+
+    .cross {
+        margin-left: 420px;
+    }
+
+    .post {
+        margin-left: 325px;
+    }
+
+    .left ul li img {
+        position: relative;
+        margin-left: 14px;
+    }
+
+    .left ul li a span {
+        display: none;
+    }
+
+    .left ul li a {
+        padding-left: 0px;
+    }
+
+    .left ul li .active {
+        border-left: none;
+        padding-left: 5px;
+    }
+
+    .left ul li a:hover {
+        border: none;
+    }
+    .right {
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+}
+
+
+@media(max-width:636px) {
+
+    nav a {
+        display: none;
+    }
+
+    .acc {
+        margin-right: -5px;
+    }
+
+    .left {
+        height: 97vh;
+    }
+
+    .right .progress {
+        width: 400px;
+    }
+
+    .main-progressbar {
+        width: 230px;
+    }
+
+    .cross {
+        margin-left: 320px;
+    }
+
+    .post {
+        margin-left: 210px;
+    }
+}
+@media(max-width:496px) {
+
+
+    nav a {
+        display: none;
+    }
+
+    .acc {
+        margin-right: -5px;
+    }
+
+    .left ul li img {
+        margin-left: 15px;
+    }
+
+    .left {
+        height: 97vh;
+    }
+}
+
+@media(max-width:494px) {
+    nav a {
+        display: none;
+    }
+
+    nav {
+        height: 55px;
+    }
+
+    .acc {
+        margin-right: -17px;
+    }
+
+    .notification {
+        margin-left: 4px;
+    }
+
+    .exit {
+        margin-right: 5px;
+    }
+
+    .light {
+        margin: 23px 5px;
+    }
+
+    .left ul li img {
+        margin-left: 15px;
+    }
+
+    .head {
+        margin: 16px;
+        width: 105px;
+    }
+
+    .exit {
+        margin-right: 10px;
+    }
+
+    .left-nav .dark,
+    .light,
+    .notification,
+    .exit {
+        width: 17px;
+    }
+
+    .left {
+        height: 95vh;
+        margin-top: 55px;
+    }
+
+    .right .progress {
+        width: 300px;
+    }
+
+    .main-progressbar {
+        width: 130px;
+    }
+
+    .cross {
+        margin-left: 235px;
+    }
+
+    .post {
+        margin-left: 110px;
+    }
+}
+
+/* @media(max-width:470px){
+    .exit {
+        margin-right: 150px;
+    }
+    .acc {
+        margin: 15px 1px;
+    }
+
+    .left-nav .dark,
+    .light,
+    .notification,
+    .exit {
+        margin: 24px 2px;
+    }
+
+    .left {
+        height: 125vh;
+    }
+
+    .file-box {
+        width: 202px;
+        background: #091637;
+        border-radius: 5px;
+        height: 68px;
+        margin-left: 10px;
+    }
+
+    nav {
+        width: 130vw;
+    }
+
+} */
+
+@media(max-width:412px) {
+    .left {
+        height: 150vh;
+    }
+    .right h1{
+        font-size: 24px;
+    }
+
+    .right .progress {
+        width: 220px;
+        height: 80px;
+    }
+
+    .main-progressbar {
+        width: 110px;
+        margin-left: 60px;
+    }
+
+    .cross {
+        margin-left: 175px;
+        margin-top: -43px;
+    }
+
+    .post {
+        margin-left: 90px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .right .progress .pdf {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .right label {
+        margin-left: 60px;
+        font-size: 14px;
+    }
+    .right .time{
+        font-size: 10px;
+    }
+}

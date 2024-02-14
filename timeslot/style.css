@@ -1,0 +1,167 @@
+nav {
+    background: #011E40;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 80px;
+}
+
+.heading {
+    margin-top: 10px;
+}
+
+body {
+    background: #050E25;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 713px;
+    height: 439px;
+    background: #011E40;
+    margin-top: 150px;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.time {
+    width: 535px;
+    height: 60px;
+    padding: 20px;
+    background: #012b5c;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: rgb(136, 130, 130);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#date {
+    margin-top: 20px;
+    background: transparent;
+    color: rgb(138, 134, 134);
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.second {
+    margin: 30px 90px;
+    background-color: #012b5c;
+    height: 60px;
+}
+
+.second label {
+    margin-right: 300px;
+    font-size: 16px;
+    color: rgb(131, 128, 128);
+}
+
+.select {
+    width: 244px;
+    height: 51px;
+    border-radius: 10px;
+    background: #257EE0;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cancel {
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+@media(max-width:740px) {
+    .container {
+        width: 613px;
+    }
+
+    .second {
+        margin: 30px 40px;
+    }
+}
+
+@media(max-width:644px) {
+    .container {
+        width: 513px;
+    }
+
+    .second {
+        margin: 30px 27px;
+    }
+
+    .time {
+        width: 455px;
+    }
+
+    .second label {
+        margin-right: 200px;
+    }
+}
+@media(max-width:526px) {
+    .container {
+        width: 350px;
+    }
+
+    .second {
+        margin: 30px 21px;
+    }
+
+    .time {
+        width: 310px;
+    }
+
+    .second label {
+        margin-right: 80px;
+    }
+}
+@media(max-width:365px) {
+    .container {
+        width: 260px;
+    }
+
+    .second {
+        margin: 30px 17px;
+    }
+
+    .time {
+        width: 230px;
+    }
+
+    .second label {
+        margin-right: 0px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .select {
+        width: 130px;
+    }
+}
